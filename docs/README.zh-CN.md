@@ -1,6 +1,6 @@
 # Pi DIY Provider
 
-[English](README.md) | 简体中文 | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](../README.md) | 简体中文 | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 一个专注于 Pi 的扩展包，用于配置基于 API Key 的中转服务和自定义供应商，无需手动编辑 JSON。它会将供应商及模型定义写入 `~/.pi/agent/models.json`，刷新 Pi 的模型注册表，并安全地重新加载扩展运行时。
 

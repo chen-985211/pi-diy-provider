@@ -1,6 +1,6 @@
 # Pi DIY Provider
 
-[English](README.md) | [简体中文](README.zh-CN.md) | 繁體中文 | [日本語](README.ja.md) | [한국어](README.ko.md)
+[English](../README.md) | [简体中文](README.zh-CN.md) | 繁體中文 | [日本語](README.ja.md) | [한국어](README.ko.md)
 
 一個專為 Pi 設計的擴充套件，用來設定以 API Key 驗證的中轉服務及自訂供應商，無須手動編輯 JSON。它會將供應商與模型定義寫入 `~/.pi/agent/models.json`、重新整理 Pi 的模型登錄檔，並安全地重新載入擴充套件執行環境。
 

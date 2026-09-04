@@ -1,6 +1,6 @@
 # Pi DIY Provider
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | 日本語 | [한국어](README.ko.md)
+[English](../README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | 日本語 | [한국어](README.ko.md)
 
 JSON を手作業で編集せずに、API キー方式のリレーサービスやカスタムプロバイダーを Pi に設定するためのパッケージです。プロバイダーとモデルの定義を `~/.pi/agent/models.json` に書き込み、Pi のモデルレジストリを更新して、拡張機能のランタイムを安全に再読み込みします。
 

@@ -1,6 +1,6 @@
 # Pi DIY Provider
 
-[English](README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | 한국어
+[English](../README.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | 한국어
 
 JSON을 직접 편집하지 않고도 API 키 기반 릴레이 서비스와 사용자 지정 공급자를 Pi에 설정할 수 있는 전용 패키지입니다. 공급자와 모델 정의를 `~/.pi/agent/models.json`에 기록하고, Pi의 모델 레지스트리를 새로 고친 다음 확장 프로그램 런타임을 안전하게 다시 불러옵니다.
 
