@@ -6,16 +6,23 @@ JSON を手作業で編集せずに、API キー方式のリレーサービス�
 
 ## インストール
 
-ローカルのチェックアウトからインストールする場合：
+npm から最新リリースをインストールします。
 
 ```bash
-pi install /absolute/path/to/pi-diy-provider
+pi install npm:pi-diy-provider
 ```
 
-1 セッションだけ試す場合：
+設定に追加せず、1 セッションだけ試す場合：
 
 ```bash
-pi -e /absolute/path/to/pi-diy-provider
+pi -e npm:pi-diy-provider
+```
+
+インストール済みパッケージの更新または削除：
+
+```bash
+pi update npm:pi-diy-provider
+pi remove npm:pi-diy-provider
 ```
 
 ## 使い方
@@ -55,6 +62,20 @@ API キーが `models.json` に書き込まれることはありません。モ�
 Node.js 22.19 以降が必要です。
 
 ```bash
+git clone https://github.com/chen-985211/pi-diy-provider.git
+cd pi-diy-provider
 npm install --ignore-scripts
 npm run check
+```
+
+開発中にローカルのチェックアウトを 1 セッションだけ読み込む場合：
+
+```bash
+pi -e /absolute/path/to/pi-diy-provider
+```
+
+ローカルのチェックアウトを Pi にインストールすることもできます。
+
+```bash
+pi install /absolute/path/to/pi-diy-provider
 ```

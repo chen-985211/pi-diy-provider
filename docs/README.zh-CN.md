@@ -6,16 +6,23 @@
 
 ## 安装
 
-从本地检出目录安装：
+从 npm 安装最新版本：
 
 ```bash
-pi install /absolute/path/to/pi-diy-provider
+pi install npm:pi-diy-provider
 ```
 
-仅在当前会话中试用：
+仅在当前会话中试用，不写入设置：
 
 ```bash
-pi -e /absolute/path/to/pi-diy-provider
+pi -e npm:pi-diy-provider
+```
+
+更新或卸载已安装的扩展包：
+
+```bash
+pi update npm:pi-diy-provider
+pi remove npm:pi-diy-provider
 ```
 
 ## 使用
@@ -55,6 +62,20 @@ API Key 不会写入 `models.json`。手动输入模型时，请运行：
 需要 Node.js 22.19 或更高版本。
 
 ```bash
+git clone https://github.com/chen-985211/pi-diy-provider.git
+cd pi-diy-provider
 npm install --ignore-scripts
 npm run check
+```
+
+开发时，仅在当前会话中加载本地检出目录：
+
+```bash
+pi -e /absolute/path/to/pi-diy-provider
+```
+
+也可以将本地检出目录安装到 Pi：
+
+```bash
+pi install /absolute/path/to/pi-diy-provider
 ```

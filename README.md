@@ -6,16 +6,23 @@ A focused Pi package for setting up API-key-based relay and custom providers wit
 
 ## Install
 
-From this checkout:
+Install the latest release from npm:
 
 ```bash
-pi install /absolute/path/to/pi-diy-provider
+pi install npm:pi-diy-provider
 ```
 
-For a one-session trial:
+Try it for one session without adding it to your settings:
 
 ```bash
-pi -e /absolute/path/to/pi-diy-provider
+pi -e npm:pi-diy-provider
+```
+
+Update or remove the installed package:
+
+```bash
+pi update npm:pi-diy-provider
+pi remove npm:pi-diy-provider
 ```
 
 ## Use
@@ -55,6 +62,20 @@ The provider appears in Pi's built-in API-key provider list. After the key is sa
 Requires Node.js 22.19 or newer.
 
 ```bash
+git clone https://github.com/chen-985211/pi-diy-provider.git
+cd pi-diy-provider
 npm install --ignore-scripts
 npm run check
+```
+
+Load the local checkout for one session while developing:
+
+```bash
+pi -e /absolute/path/to/pi-diy-provider
+```
+
+Or install the local checkout in Pi:
+
+```bash
+pi install /absolute/path/to/pi-diy-provider
 ```

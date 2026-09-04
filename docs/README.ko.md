@@ -6,16 +6,23 @@ JSON을 직접 편집하지 않고도 API 키 기반 릴레이 서비스와 사�
 
 ## 설치
 
-로컬 체크아웃에서 설치하려면 다음을 실행합니다.
+npm에서 최신 릴리스를 설치합니다.
 
 ```bash
-pi install /absolute/path/to/pi-diy-provider
+pi install npm:pi-diy-provider
 ```
 
-한 세션에서만 시험하려면 다음을 실행합니다.
+설정에 추가하지 않고 한 세션에서만 시험하려면 다음을 실행합니다.
 
 ```bash
-pi -e /absolute/path/to/pi-diy-provider
+pi -e npm:pi-diy-provider
+```
+
+설치된 패키지를 업데이트하거나 제거하려면 다음을 실행합니다.
+
+```bash
+pi update npm:pi-diy-provider
+pi remove npm:pi-diy-provider
 ```
 
 ## 사용법
@@ -55,6 +62,20 @@ API 키는 `models.json`에 기록되지 않습니다. 모델을 직접 입력�
 Node.js 22.19 이상이 필요합니다.
 
 ```bash
+git clone https://github.com/chen-985211/pi-diy-provider.git
+cd pi-diy-provider
 npm install --ignore-scripts
 npm run check
+```
+
+개발 중 로컬 체크아웃을 한 세션에서만 불러오려면 다음을 실행합니다.
+
+```bash
+pi -e /absolute/path/to/pi-diy-provider
+```
+
+로컬 체크아웃을 Pi에 설치할 수도 있습니다.
+
+```bash
+pi install /absolute/path/to/pi-diy-provider
 ```
