@@ -1,5 +1,7 @@
 # Pi DIY Provider
 
+English | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+
 A focused Pi package for setting up API-key-based relay and custom providers without editing JSON. It writes provider and model definitions to `~/.pi/agent/models.json`, refreshes Pi's model registry, and safely reloads the extension runtime.
 
 ## Install
